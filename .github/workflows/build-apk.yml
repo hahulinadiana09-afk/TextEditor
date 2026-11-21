@@ -38,7 +38,7 @@ jobs:
           gradle-version: '8.11.1'
 
       - name: Extract project
-        run: unzip -q TextEditorStarter.zip
+        run: unzip -q TextEditorStarter-fixed.zip
 
       - name: Build APK
         run: gradle --no-daemon -p TextEditorStarter :app:assembleDebug
