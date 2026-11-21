@@ -36,7 +36,7 @@ jobs:
           gradle-version: '8.11.1'
 
       - name: Extract project
-        run: unzip -q DiaryV2-starter.zip
+        run: unzip -q DiaryV2-starter-compose-fix.zip
 
       - name: Build APK
         run: gradle --no-daemon -p DiaryV2 :app:assembleDebug
